@@ -28,6 +28,7 @@
     <nav>
       <ul class="nav-links" id="navLinks">
         <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
         <li class="nav-phone-mobile"><a href="#contact">✉️ Request a Free Estimate</a></li>
@@ -137,6 +138,84 @@
     </div>
   </section>
 
+  <!-- Pricing / Estimate Calculator -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Ballpark Pricing</span>
+        <h2>Get a rough idea in seconds</h2>
+        <p>Not sure what your room might cost? Pick what's closest to your space below. For an exact number, request your free estimate and we'll take a look in person.</p>
+      </div>
+
+      <div class="calculator">
+        <div class="calc-controls">
+          <div class="calc-group">
+            <span class="calc-label">Room size</span>
+            <div class="calc-options" data-group="size">
+              <button type="button" class="calc-option is-active" data-value="small">
+                <strong>Small</strong>
+                <span>Bedroom or bathroom</span>
+              </button>
+              <button type="button" class="calc-option" data-value="medium">
+                <strong>Medium</strong>
+                <span>Bedroom or dining room</span>
+              </button>
+              <button type="button" class="calc-option" data-value="large">
+                <strong>Large</strong>
+                <span>Living room or primary bedroom</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="calc-group">
+            <span class="calc-label">Ceiling height</span>
+            <div class="calc-options" data-group="height">
+              <button type="button" class="calc-option is-active" data-value="standard">
+                <strong>Standard</strong>
+                <span>About 8 feet &mdash; most homes</span>
+              </button>
+              <button type="button" class="calc-option" data-value="tall">
+                <strong>Tall</strong>
+                <span>9&ndash;10+ feet or vaulted</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="calc-group">
+            <span class="calc-label">Add-ons</span>
+            <label class="calc-checkbox">
+              <input type="checkbox" id="calcTrim">
+              <span>Include trim &amp; baseboards</span>
+            </label>
+            <label class="calc-checkbox">
+              <input type="checkbox" id="calcDrywall">
+              <span>Small drywall patching (nail holes, dings)</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="calc-result">
+          <span class="calc-result-label">Your ballpark estimate</span>
+          <div class="calc-result-price" id="calcPrice">$410&ndash;$520</div>
+          <p class="calc-note">Rough estimate only &mdash; based on typical Twin Cities room sizes. Your exact price depends on the actual space.</p>
+
+          <div class="calc-compare">
+            <div class="calc-compare-row">
+              <span>Typical large painting company</span>
+              <strong id="calcBig">$880&ndash;$1,120</strong>
+            </div>
+            <div class="calc-compare-row calc-compare-row--us">
+              <span>True Painting MN</span>
+              <strong id="calcUs">$410&ndash;$520</strong>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn--primary" style="width:100%; justify-content:center; margin-top:16px;">Get My Exact Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- About -->
   <section class="section section--alt" id="about">
     <div class="container about-single">
@@ -144,6 +223,12 @@
         <span class="eyebrow">About True Painting MN</span>
         <h2>Careful, local, and easy to work with.</h2>
         <p>True Painting MN is a Plymouth, MN-based painting business focused on interior work for homeowners. The goal on every job is simple: protect your home, do the prep right, and leave you with a clean, even finish.</p>
+
+        <div class="founder-note">
+          <p>I'm a young business owner who spent years painting professionally for other companies before deciding to go out on my own. Starting True Painting MN means bringing that same experience straight to you &mdash; with more personal care, and without the markup that comes with a big company name attached to it.</p>
+          <span class="founder-sign">&mdash; Alek, Owner</span>
+        </div>
+
         <ul class="checklist">
           <li>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
@@ -257,6 +342,7 @@
       </a>
       <ul class="footer-links">
         <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -282,6 +368,71 @@
       navToggle.setAttribute('aria-expanded', 'false');
     });
   });
+
+  // --- Ballpark pricing calculator ---
+  (function () {
+    var ROOM_SQFT = { small: 260, medium: 360, large: 460 };
+    var HEIGHT_MULT = { standard: 1, tall: 1.15 };
+    var TRIM_FEE = { small: 70, medium: 90, large: 110 };
+    var DRYWALL_FEE = 65;
+    var OUR_RATE = 1.75;      // $ per sq ft of wall, walls-only
+    var BIG_CO_RATE = 3.75;   // typical larger/franchise painting company rate for comparison
+
+    var state = { size: 'small', height: 'standard' };
+
+    var calcEl = document.querySelector('.calculator');
+    if (!calcEl) return;
+
+    var priceEl = document.getElementById('calcPrice');
+    var usEl = document.getElementById('calcUs');
+    var bigEl = document.getElementById('calcBig');
+    var trimBox = document.getElementById('calcTrim');
+    var drywallBox = document.getElementById('calcDrywall');
+
+    function money(n) {
+      var rounded = Math.round(n / 10) * 10;
+      return '$' + rounded.toLocaleString('en-US');
+    }
+
+    function range(rate, extra) {
+      var base = ROOM_SQFT[state.size] * rate * HEIGHT_MULT[state.height];
+      var low = base * 0.9 + extra;
+      var high = base * 1.15 + extra;
+      return money(low) + '–' + money(high);
+    }
+
+    function update() {
+      var extra = 0;
+      if (trimBox.checked) extra += TRIM_FEE[state.size];
+      if (drywallBox.checked) extra += DRYWALL_FEE;
+
+      var ours = range(OUR_RATE, extra);
+      var big = range(BIG_CO_RATE, 0);
+
+      priceEl.textContent = ours;
+      usEl.textContent = ours;
+      bigEl.textContent = big;
+    }
+
+    calcEl.querySelectorAll('.calc-options').forEach(function (group) {
+      var groupName = group.getAttribute('data-group');
+      group.querySelectorAll('.calc-option').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          group.querySelectorAll('.calc-option').forEach(function (b) {
+            b.classList.remove('is-active');
+          });
+          btn.classList.add('is-active');
+          state[groupName] = btn.getAttribute('data-value');
+          update();
+        });
+      });
+    });
+
+    trimBox.addEventListener('change', update);
+    drywallBox.addEventListener('change', update);
+
+    update();
+  })();
 </script>
 </body>
 </html>
