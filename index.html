@@ -3,6 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  // Always open on the top of the page, even if the link that was shared/tapped
+  // has a #section at the end (e.g. from copying the URL after clicking a nav button).
+  if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+  if (location.hash) { history.replaceState(null, '', location.pathname + location.search); }
+</script>
 <title>True Painting MN | Interior Painting in Plymouth, MN</title>
 <meta name="description" content="True Painting MN provides professional interior painting and small drywall repair for homeowners in Plymouth, MN and the surrounding area. Free estimates.">
 
