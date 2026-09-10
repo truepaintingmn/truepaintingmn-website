@@ -1,0 +1,9 @@
+# True Painting MN — https://truepaintingmn.com
+# Interior painting in Plymouth, Minnesota.
+
+User-agent: *
+Allow: /
+Disallow: /_src/
+Disallow: /thank-you
+
+Sitemap: https://truepaintingmn.com/sitemap.xml

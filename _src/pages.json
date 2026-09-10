@@ -1,0 +1,443 @@
+[
+  {
+    "slug": "index",
+    "path": "/",
+    "nav": "home",
+    "priority": "1.0",
+    "title": "Interior Painting in Plymouth, MN | True Painting MN",
+    "description": "Owner-operated interior painting in Plymouth, MN and the west metro. Rooms, ceilings, trim, doors and drywall patching. Careful prep, honest pricing, free estimates.",
+    "pagetype": "WebPage",
+    "faqschema": false
+  },
+  {
+    "slug": "services",
+    "path": "/services",
+    "nav": "services",
+    "priority": "0.9",
+    "title": "Interior Painting Services | Plymouth, MN | True Painting MN",
+    "description": "Interior painting services for west metro homeowners: room and wall painting, ceilings, trim and doors, and small drywall patching. See what each job includes.",
+    "breadcrumb": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Services",
+        "/services"
+      ]
+    ],
+    "pagetype": "CollectionPage"
+  },
+  {
+    "slug": "interior-house-painting",
+    "path": "/interior-house-painting",
+    "nav": "services",
+    "priority": "0.9",
+    "title": "Interior House Painting in Plymouth, MN | True Painting MN",
+    "description": "Interior house painting for Plymouth and west metro homes. Walls, whole rooms and full main floors, with real prep, two coats and clean lines. Free estimate.",
+    "breadcrumb": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Services",
+        "/services"
+      ],
+      [
+        "Interior House Painting",
+        "/interior-house-painting"
+      ]
+    ],
+    "schema": [
+      {
+        "@type": "Service",
+        "@id": "https://truepaintingmn.com/interior-house-painting#service",
+        "serviceType": "Interior house painting",
+        "name": "Interior House Painting",
+        "provider": {
+          "@id": "https://truepaintingmn.com/#business"
+        },
+        "areaServed": {
+          "@type": "AdministrativeArea",
+          "name": "West Metro, Minneapolis-St. Paul, Minnesota"
+        },
+        "description": "Interior wall and room painting for homeowners in Plymouth, Minnesota and the surrounding west metro suburbs, including surface prep, patching, priming and two finish coats."
+      }
+    ]
+  },
+  {
+    "slug": "ceiling-painting",
+    "path": "/ceiling-painting",
+    "nav": "services",
+    "priority": "0.8",
+    "title": "Ceiling Painting in Plymouth, MN | True Painting MN",
+    "description": "Ceiling painting and water-stain sealing for west metro homes. Rolled, not sprayed, with floors and furniture covered. Free estimates in Plymouth, MN.",
+    "breadcrumb": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Services",
+        "/services"
+      ],
+      [
+        "Ceiling Painting",
+        "/ceiling-painting"
+      ]
+    ],
+    "schema": [
+      {
+        "@type": "Service",
+        "@id": "https://truepaintingmn.com/ceiling-painting#service",
+        "serviceType": "Ceiling painting",
+        "name": "Ceiling Painting",
+        "provider": {
+          "@id": "https://truepaintingmn.com/#business"
+        },
+        "areaServed": {
+          "@type": "AdministrativeArea",
+          "name": "West Metro, Minneapolis-St. Paul, Minnesota"
+        },
+        "description": "Interior ceiling painting and water-stain sealing for homes in Plymouth, Minnesota and the surrounding west metro."
+      }
+    ]
+  },
+  {
+    "slug": "trim-and-door-painting",
+    "path": "/trim-and-door-painting",
+    "nav": "services",
+    "priority": "0.8",
+    "title": "Trim &amp; Door Painting in Plymouth, MN | True Painting MN",
+    "description": "Trim, baseboard and door painting in Plymouth, MN. Includes painting stained wood trim white with proper bonding primer. Crisp lines, free estimates.",
+    "breadcrumb": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Services",
+        "/services"
+      ],
+      [
+        "Trim &amp; Door Painting",
+        "/trim-and-door-painting"
+      ]
+    ],
+    "schema": [
+      {
+        "@type": "Service",
+        "@id": "https://truepaintingmn.com/trim-and-door-painting#service",
+        "serviceType": "Trim and door painting",
+        "name": "Trim and Door Painting",
+        "provider": {
+          "@id": "https://truepaintingmn.com/#business"
+        },
+        "areaServed": {
+          "@type": "AdministrativeArea",
+          "name": "West Metro, Minneapolis-St. Paul, Minnesota"
+        },
+        "description": "Baseboard, casing, crown, door and window trim painting, including converting stained wood trim to painted white, for homes in the Minneapolis west metro."
+      }
+    ]
+  },
+  {
+    "slug": "drywall-patching-and-repair",
+    "path": "/drywall-patching-and-repair",
+    "nav": "services",
+    "priority": "0.75",
+    "title": "Drywall Patching &amp; Small Repairs | Plymouth, MN | True Painting MN",
+    "description": "Nail holes, dings, dents, popped screws and small drywall patches filled, sanded and blended before painting. Plymouth, MN and the west metro.",
+    "breadcrumb": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Services",
+        "/services"
+      ],
+      [
+        "Drywall Patching",
+        "/drywall-patching-and-repair"
+      ]
+    ],
+    "schema": [
+      {
+        "@type": "Service",
+        "@id": "https://truepaintingmn.com/drywall-patching-and-repair#service",
+        "serviceType": "Drywall patching and repair",
+        "name": "Drywall Patching and Small Repair",
+        "provider": {
+          "@id": "https://truepaintingmn.com/#business"
+        },
+        "areaServed": {
+          "@type": "AdministrativeArea",
+          "name": "West Metro, Minneapolis-St. Paul, Minnesota"
+        },
+        "description": "Small drywall patching, hole filling and surface repair carried out as part of an interior repaint in Plymouth, Minnesota and the west metro."
+      }
+    ]
+  },
+  {
+    "slug": "pricing",
+    "path": "/pricing",
+    "nav": "pricing",
+    "priority": "0.9",
+    "title": "Interior Painting Cost in the Twin Cities | True Painting MN",
+    "description": "What interior painting actually costs in the west metro, what changes the price, and a ballpark estimator for your room. No sales pitch, just the numbers.",
+    "breadcrumb": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Pricing",
+        "/pricing"
+      ]
+    ]
+  },
+  {
+    "slug": "service-areas",
+    "path": "/service-areas",
+    "nav": "areas",
+    "priority": "0.8",
+    "title": "Painting Service Areas | West Metro Minneapolis | True Painting MN",
+    "description": "Interior painting in Plymouth, Maple Grove, Minnetonka, Wayzata, Golden Valley and the surrounding west metro suburbs of Minneapolis.",
+    "breadcrumb": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Service Areas",
+        "/service-areas"
+      ]
+    ],
+    "pagetype": "CollectionPage"
+  },
+  {
+    "slug": "painters-plymouth-mn",
+    "path": "/painters-plymouth-mn",
+    "nav": "areas",
+    "priority": "0.9",
+    "title": "Interior Painters in Plymouth, MN | True Painting MN",
+    "description": "Local interior painter based in Plymouth, MN. Rooms, ceilings, trim and doors for Plymouth homes, from Bass Lake to Parkers Lake. Free estimates.",
+    "breadcrumb": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Service Areas",
+        "/service-areas"
+      ],
+      [
+        "Plymouth",
+        "/painters-plymouth-mn"
+      ]
+    ]
+  },
+  {
+    "slug": "painters-maple-grove-mn",
+    "path": "/painters-maple-grove-mn",
+    "nav": "areas",
+    "priority": "0.85",
+    "title": "Interior Painters in Maple Grove, MN | True Painting MN",
+    "description": "Interior painting for Maple Grove homes, including tall entryways and vaulted great rooms. Careful prep, honest pricing, free estimates.",
+    "breadcrumb": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Service Areas",
+        "/service-areas"
+      ],
+      [
+        "Maple Grove",
+        "/painters-maple-grove-mn"
+      ]
+    ]
+  },
+  {
+    "slug": "painters-minnetonka-mn",
+    "path": "/painters-minnetonka-mn",
+    "nav": "areas",
+    "priority": "0.85",
+    "title": "Interior Painters in Minnetonka, MN | True Painting MN",
+    "description": "Interior painting in Minnetonka, MN. Updating dated wood trim, split-level walls and multi-level rooms. Free, no-pressure estimates.",
+    "breadcrumb": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Service Areas",
+        "/service-areas"
+      ],
+      [
+        "Minnetonka",
+        "/painters-minnetonka-mn"
+      ]
+    ]
+  },
+  {
+    "slug": "painters-wayzata-mn",
+    "path": "/painters-wayzata-mn",
+    "nav": "areas",
+    "priority": "0.8",
+    "title": "Interior Painters in Wayzata, MN | True Painting MN",
+    "description": "Careful interior painting for Wayzata homes near Lake Minnetonka. Detail-oriented trim work, protected floors, and a clean job site every day.",
+    "breadcrumb": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Service Areas",
+        "/service-areas"
+      ],
+      [
+        "Wayzata",
+        "/painters-wayzata-mn"
+      ]
+    ]
+  },
+  {
+    "slug": "painters-golden-valley-mn",
+    "path": "/painters-golden-valley-mn",
+    "nav": "areas",
+    "priority": "0.8",
+    "title": "Interior Painters in Golden Valley, MN | True Painting MN",
+    "description": "Interior painting for Golden Valley homes, from mid-century ramblers to newer builds. Careful prep on older plaster and trim. Free estimates.",
+    "breadcrumb": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Service Areas",
+        "/service-areas"
+      ],
+      [
+        "Golden Valley",
+        "/painters-golden-valley-mn"
+      ]
+    ]
+  },
+  {
+    "slug": "about",
+    "path": "/about",
+    "nav": "about",
+    "priority": "0.85",
+    "title": "About Alek | Owner of True Painting MN | Plymouth, MN",
+    "description": "True Painting MN is run by Alek Silenko, a Plymouth painter who grew up on job sites. Here is who I am, how I work, and what I will and will not promise you.",
+    "breadcrumb": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "About",
+        "/about"
+      ]
+    ],
+    "pagetype": "AboutPage",
+    "schema": [
+      {
+        "@type": "Person",
+        "@id": "https://truepaintingmn.com/about#alek",
+        "name": "Alek Silenko",
+        "jobTitle": "Owner and Painter",
+        "worksFor": {
+          "@id": "https://truepaintingmn.com/#business"
+        },
+        "homeLocation": {
+          "@type": "Place",
+          "name": "Plymouth, Minnesota"
+        },
+        "knowsAbout": [
+          "Interior painting",
+          "Surface preparation",
+          "Drywall patching",
+          "Trim and door finishing"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "faq",
+    "path": "/faq",
+    "nav": "faq",
+    "priority": "0.85",
+    "title": "Interior Painting FAQ | Plymouth, MN | True Painting MN",
+    "description": "Straight answers about interior painting cost, prep, timing, paint, insurance and what to expect when a painter works in your home.",
+    "breadcrumb": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "FAQ",
+        "/faq"
+      ]
+    ]
+  },
+  {
+    "slug": "contact",
+    "path": "/contact",
+    "nav": "contact",
+    "priority": "0.9",
+    "title": "Free Painting Estimate | Plymouth, MN | True Painting MN",
+    "description": "Call or text (952) 486-0205, or send the form, for a free interior painting estimate in Plymouth, MN and the west metro. No cost, no obligation.",
+    "breadcrumb": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Contact",
+        "/contact"
+      ]
+    ],
+    "pagetype": "ContactPage"
+  },
+  {
+    "slug": "thank-you",
+    "path": "/thank-you",
+    "nav": "contact",
+    "index": false,
+    "title": "Thank You | True Painting MN",
+    "description": "Your estimate request came through. I will get back to you shortly.",
+    "headextra": "<meta name=\"robots\" content=\"noindex, follow\">"
+  },
+  {
+    "slug": "privacy",
+    "path": "/privacy",
+    "nav": "",
+    "priority": "0.2",
+    "title": "Privacy Policy | True Painting MN",
+    "description": "How True Painting MN handles the information you send through this website.",
+    "breadcrumb": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Privacy",
+        "/privacy"
+      ]
+    ]
+  },
+  {
+    "slug": "404",
+    "path": "/404",
+    "nav": "",
+    "index": false,
+    "title": "Page Not Found | True Painting MN",
+    "description": "That page does not exist.",
+    "headextra": "<meta name=\"robots\" content=\"noindex, follow\">"
+  }
+]
