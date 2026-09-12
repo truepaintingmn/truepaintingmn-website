@@ -5,7 +5,7 @@
     "nav": "home",
     "priority": "1.0",
     "title": "Interior Painting in Plymouth, MN | True Painting MN",
-    "description": "Owner-operated interior painting in Plymouth, MN and the west metro. Rooms, ceilings, trim, doors and drywall patching. Careful prep, honest pricing, free estimates.",
+    "description": "Owner-operated interior painting in Plymouth, MN and the west metro. Rooms, trim and drywall patching. Careful prep, honest pricing, free estimates.",
     "pagetype": "WebPage",
     "faqschema": false
   },
@@ -15,7 +15,7 @@
     "nav": "services",
     "priority": "0.9",
     "title": "Interior Painting Services | Plymouth, MN | True Painting MN",
-    "description": "Interior painting services for west metro homeowners: room and wall painting, ceilings, trim and doors, and small drywall patching. See what each job includes.",
+    "description": "Interior painting services for west metro homeowners: room and wall painting, trim and baseboards, and small drywall patching. See what each job includes.",
     "breadcrumb": [
       [
         "Home",
@@ -67,12 +67,12 @@
     ]
   },
   {
-    "slug": "ceiling-painting",
-    "path": "/ceiling-painting",
+    "slug": "trim-and-baseboard-painting",
+    "path": "/trim-and-baseboard-painting",
     "nav": "services",
     "priority": "0.8",
-    "title": "Ceiling Painting in Plymouth, MN | True Painting MN",
-    "description": "Ceiling painting and water-stain sealing for west metro homes. Rolled, not sprayed, with floors and furniture covered. Free estimates in Plymouth, MN.",
+    "title": "Trim &amp; Baseboard Painting in Plymouth, MN | True Painting MN",
+    "description": "Trim and baseboard painting in Plymouth, MN. Includes painting stained wood trim white with proper bonding primer. Crisp lines, free estimates.",
     "breadcrumb": [
       [
         "Home",
@@ -83,16 +83,16 @@
         "/services"
       ],
       [
-        "Ceiling Painting",
-        "/ceiling-painting"
+        "Trim &amp; Baseboard Painting",
+        "/trim-and-baseboard-painting"
       ]
     ],
     "schema": [
       {
         "@type": "Service",
-        "@id": "https://truepaintingmn.com/ceiling-painting#service",
-        "serviceType": "Ceiling painting",
-        "name": "Ceiling Painting",
+        "@id": "https://truepaintingmn.com/trim-and-baseboard-painting#service",
+        "serviceType": "Trim and baseboard painting",
+        "name": "Trim and Baseboard Painting",
         "provider": {
           "@id": "https://truepaintingmn.com/#business"
         },
@@ -100,45 +100,7 @@
           "@type": "AdministrativeArea",
           "name": "West Metro, Minneapolis-St. Paul, Minnesota"
         },
-        "description": "Interior ceiling painting and water-stain sealing for homes in Plymouth, Minnesota and the surrounding west metro."
-      }
-    ]
-  },
-  {
-    "slug": "trim-and-door-painting",
-    "path": "/trim-and-door-painting",
-    "nav": "services",
-    "priority": "0.8",
-    "title": "Trim &amp; Door Painting in Plymouth, MN | True Painting MN",
-    "description": "Trim, baseboard and door painting in Plymouth, MN. Includes painting stained wood trim white with proper bonding primer. Crisp lines, free estimates.",
-    "breadcrumb": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Services",
-        "/services"
-      ],
-      [
-        "Trim &amp; Door Painting",
-        "/trim-and-door-painting"
-      ]
-    ],
-    "schema": [
-      {
-        "@type": "Service",
-        "@id": "https://truepaintingmn.com/trim-and-door-painting#service",
-        "serviceType": "Trim and door painting",
-        "name": "Trim and Door Painting",
-        "provider": {
-          "@id": "https://truepaintingmn.com/#business"
-        },
-        "areaServed": {
-          "@type": "AdministrativeArea",
-          "name": "West Metro, Minneapolis-St. Paul, Minnesota"
-        },
-        "description": "Baseboard, casing, crown, door and window trim painting, including converting stained wood trim to painted white, for homes in the Minneapolis west metro."
+        "description": "Baseboard, casing, crown and window trim painting, including converting stained wood trim to painted white, for homes in the Minneapolis west metro."
       }
     ]
   },
@@ -223,7 +185,7 @@
     "nav": "areas",
     "priority": "0.9",
     "title": "Interior Painters in Plymouth, MN | True Painting MN",
-    "description": "Local interior painter based in Plymouth, MN. Rooms, ceilings, trim and doors for Plymouth homes, from Bass Lake to Parkers Lake. Free estimates.",
+    "description": "Local interior painter based in Plymouth, MN. Rooms and trim for Plymouth homes, from Bass Lake to Parkers Lake. Free estimates.",
     "breadcrumb": [
       [
         "Home",

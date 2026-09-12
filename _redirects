@@ -8,3 +8,9 @@ https://www.truepaintingmn.com/*  https://truepaintingmn.com/:splat  301
 /contact.html    /contact    301
 /faq.html        /faq        301
 /pricing.html    /pricing    301
+
+# Dropped/renamed services (2026-09-12) — the site was live for a few days
+# under the old URLs, so redirect rather than 404 in case anything got indexed
+# or bookmarked.
+/trim-and-door-painting   /trim-and-baseboard-painting   301
+/ceiling-painting         /services                      301

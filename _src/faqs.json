@@ -2,7 +2,7 @@
   "general": [
     {
       "q": "How much does it cost to paint a room in the Twin Cities?",
-      "a": "<p>For a standard bedroom with 8-foot ceilings, walls only, most homeowners in the west metro land somewhere in the <strong>$400&ndash;$510</strong> range for labor. Trim, ceilings, tall or vaulted walls, heavy patching, and dark-over-light color changes all push it up. The honest answer is that nobody can price your room accurately from a website &mdash; that is what the free estimate is for. <a href=\"/pricing\">See how I put a number together</a>.</p>"
+      "a": "<p>For a standard bedroom with 8-foot ceilings, walls only, most homeowners in the west metro land somewhere in the <strong>$285&ndash;$365</strong> range for labor. Trim, tall or vaulted walls, heavy patching, and dark-over-light color changes all push it up. The honest answer is that nobody can price your room accurately from a website &mdash; that is what the free estimate is for. <a href=\"/pricing\">See how I put a number together</a>.</p>"
     },
     {
       "q": "Do you really have me buy the paint?",
@@ -10,7 +10,7 @@
     },
     {
       "q": "How long does painting a room take?",
-      "a": "<p>A single bedroom, walls only, is usually one day. Add trim and doors and it is typically two. A whole main floor is normally three to five days depending on how much patching and how many colors are involved. I will give you a realistic day count in your estimate, and if something changes I will tell you before it becomes a surprise.</p>"
+      "a": "<p>A single bedroom, walls only, is usually one day. Add trim and it is typically two. A whole main floor is normally three to five days depending on how much patching and how many colors are involved. I will give you a realistic day count in your estimate, and if something changes I will tell you before it becomes a surprise.</p>"
     },
     {
       "q": "Do I need to move my furniture out?",
@@ -25,7 +25,6 @@
       "a": "<p>I am based in Plymouth and work across the west metro &mdash; Maple Grove, Minnetonka, Wayzata, Golden Valley, Medina, New Hope, Crystal, Osseo, Orono, St. Louis Park, and the surrounding suburbs. <a href=\"/service-areas\">See the full service area</a>. If you are just outside it, ask anyway.</p>"
     }
   ],
-
   "extra": [
     {
       "q": "How do I get an estimate?",
@@ -49,11 +48,11 @@
     },
     {
       "q": "Do you paint ceilings?",
-      "a": "<p>Yes. Flat ceiling paint, water-stain sealing, and refreshing ceilings that have yellowed. I do not spray or scrape popcorn texture &mdash; textured ceilings in older homes can contain materials that need a certified abatement contractor, and that is not work I take on. <a href=\"/ceiling-painting\">More about ceiling painting</a>.</p>"
+      "a": "<p>Not right now. I keep my focus on interior walls and trim, which means every job gets full attention instead of being spread across five different specialties. If you need ceilings done too, ask me when we talk and I can point you toward someone who does them well, or we can time it so both happen back to back.</p>"
     },
     {
       "q": "Can you paint kitchen cabinets?",
-      "a": "<p>Not right now. Cabinet refinishing done properly needs a spray setup and a controlled space, and I would rather tell you no than hand you a brushed cabinet job that chips in a year. Interior walls, ceilings, trim, and doors are what I do.</p>"
+      "a": "<p>Not right now. Cabinet refinishing done properly needs a spray setup and a controlled space, and I would rather tell you no than hand you a brushed cabinet job that chips in a year. Interior walls and trim are what I do.</p>"
     },
     {
       "q": "Do you do exterior painting?",
@@ -92,15 +91,10 @@
       "a": "<p>Ask me before you book. Homes built before 1978 can have lead-based paint underneath, and federal law puts specific requirements on contractors who disturb it. I will not cut corners on that or pretend the rule does not apply. Tell me the age of your home when you call and I will tell you straight whether I can take the job.</p>"
     }
   ],
-
   "interior": [
     {
       "q": "How many coats will my walls need?",
       "a": "<p>Two, on almost every job. Going from a dark color to a light one, or covering a strong red or deep blue, may need a primer coat first &mdash; I will tell you that at the estimate rather than discovering it halfway through and asking for more money.</p>"
-    },
-    {
-      "q": "Should I paint the ceiling and trim at the same time?",
-      "a": "<p>If you are on the fence, yes. Adding ceiling or trim to a room that is already covered, taped, and set up costs far less than coming back to do it as its own job later. Fresh walls also have a way of making old trim look worse than you remembered.</p>"
     },
     {
       "q": "What sheen should I use on walls?",
@@ -111,37 +105,20 @@
       "a": "<p>Yes, and it is one of the cheapest ways to change how a room feels. It is a small job, so it often makes sense to pair it with another room you were already thinking about.</p>"
     }
   ],
-
-  "ceiling": [
-    {
-      "q": "Do you paint over water stains?",
-      "a": "<p>Only after the leak is fixed and the area is dry, and only with a stain-blocking primer first. Regular ceiling paint over a water stain will let the stain bleed right back through within weeks.</p>"
-    },
-    {
-      "q": "Do you spray or roll ceilings?",
-      "a": "<p>I roll. Spraying is faster but requires masking off the entire room, and in an occupied home rolling gives a cleaner, more controlled result with far less overspray risk to your floors and furniture.</p>"
-    },
-    {
-      "q": "Can you paint a popcorn or textured ceiling?",
-      "a": "<p>I do not scrape or remove popcorn texture. Textured ceilings installed before the mid-1980s can contain asbestos and that is work for a licensed abatement contractor, not a painter. If your textured ceiling is sound and just needs paint, ask me and we will talk about whether it is a good candidate.</p>"
-    }
-  ],
-
   "trim": [
     {
       "q": "Can you paint stained wood trim white?",
       "a": "<p>Yes, and it is one of the biggest visual changes you can make to a 1980s or 1990s house. It is real work &mdash; the trim has to be cleaned, scuff-sanded, and primed with a bonding primer before any finish coat, or the paint will peel off the varnish. Expect it to cost meaningfully more than repainting already-painted trim, and expect the result to be worth it.</p>"
     },
     {
-      "q": "What sheen is best for trim and doors?",
+      "q": "What sheen is best for trim?",
       "a": "<p><strong>Semi-gloss</strong> for most homes &mdash; it wipes clean and gives trim definition against the wall. Satin is a softer, more modern look that hides imperfections in older trim better. Either is fine; I will show you the difference.</p>"
     },
     {
-      "q": "Do you paint doors on or off the hinges?",
-      "a": "<p>Usually on, with hardware removed and the edges done carefully. Taking doors off gives a slightly better finish but leaves you without doors for a day, which most families do not want. I will tell you which makes sense for your house.</p>"
+      "q": "Do you paint doors?",
+      "a": "<p>Not right now &mdash; I focus on trim and baseboards, not the doors themselves. If you want doors done at the same time, ask me and I can point you toward someone who does, so it happens in the same visit.</p>"
     }
   ],
-
   "drywall": [
     {
       "q": "What counts as a small repair?",
@@ -156,7 +133,6 @@
       "a": "<p>On a smooth wall, yes &mdash; patched, sanded flush, primed, and painted, and you will not find it. On a heavily textured wall, a good patch blends closely but a textured surface is never a perfect match. I will set that expectation before I start, not after.</p>"
     }
   ],
-
   "pricing": [
     {
       "q": "Why is your price lower than the big companies?",
@@ -172,7 +148,7 @@
     },
     {
       "q": "What makes a quote go up?",
-      "a": "<p>Tall or vaulted ceilings, lots of trim and doors, dark-to-light color changes, heavy patching, stained trim that needs bonding primer, and rooms that are hard to set up in. What brings it down: doing several rooms at once, walls only, and keeping a similar color.</p>"
+      "a": "<p>Tall or vaulted ceilings, lots of trim work, dark-to-light color changes, heavy patching, stained trim that needs bonding primer, and rooms that are hard to set up in. What brings it down: doing several rooms at once, walls only, and keeping a similar color.</p>"
     }
   ]
 }

@@ -51,7 +51,7 @@
       "priceRange": "$$",
       "currenciesAccepted": "USD",
       "paymentAccepted": "Cash, Check, Venmo, Zelle",
-      "description": "True Painting MN is an owner-operated interior painting business in Plymouth, Minnesota. Interior rooms, ceilings, trim and doors, plus the small drywall patching that comes with a repaint. Free estimates.",
+      "description": "True Painting MN is an owner-operated interior painting business in Plymouth, Minnesota. Interior rooms and trim, plus the small drywall patching that comes with a repaint. Free estimates.",
       "founder": {
         "@type": "Person",
         "name": "Alek Silenko",
@@ -184,16 +184,8 @@
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Ceiling Painting",
-              "url": "https://truepaintingmn.com/ceiling-painting"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Trim and Door Painting",
-              "url": "https://truepaintingmn.com/trim-and-door-painting"
+              "name": "Trim and Baseboard Painting",
+              "url": "https://truepaintingmn.com/trim-and-baseboard-painting"
             }
           },
           {
@@ -282,7 +274,7 @@
           "name": "What makes a quote go up?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Tall or vaulted ceilings, lots of trim and doors, dark-to-light color changes, heavy patching, stained trim that needs bonding primer, and rooms that are hard to set up in. What brings it down: doing several rooms at once, walls only, and keeping a similar color."
+            "text": "Tall or vaulted ceilings, lots of trim work, dark-to-light color changes, heavy patching, stained trim that needs bonding primer, and rooms that are hard to set up in. What brings it down: doing several rooms at once, walls only, and keeping a similar color."
           }
         }
       ]
@@ -405,11 +397,7 @@
             <span class="calc-label">Add to the job</span>
             <label class="calc-checkbox">
               <input type="checkbox" id="calcTrim">
-              <span>Trim, baseboards &amp; doors</span>
-            </label>
-            <label class="calc-checkbox">
-              <input type="checkbox" id="calcCeiling">
-              <span>Paint the ceiling too</span>
+              <span>Trim &amp; baseboards</span>
             </label>
             <label class="calc-checkbox">
               <input type="checkbox" id="calcDrywall">
@@ -420,7 +408,7 @@
 
         <div class="calc-result">
           <span class="calc-result-label">Your ballpark range</span>
-          <div class="calc-result-price" id="calcPrice">$400&ndash;$510</div>
+          <div class="calc-result-price" id="calcPrice">$285&ndash;$365</div>
           <p class="calc-note" id="calcBreakdown">Walls only, standard ceiling height. Labor only &mdash; you buy the paint.</p>
 
           <div class="calc-compare">
@@ -463,28 +451,24 @@
             <tr>
               <th scope="col">Room</th>
               <th scope="col">Walls only</th>
-              <th scope="col">Walls + trim &amp; doors</th>
-              <th scope="col">Walls, trim &amp; ceiling</th>
+              <th scope="col">Walls + trim</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <th scope="row">Small<br><span class="disclaimer">Bedroom, office, bathroom</span></th>
-              <td>$400&ndash;$510</td>
-              <td>$460&ndash;$590</td>
-              <td>$570&ndash;$720</td>
+              <td>$285&ndash;$365</td>
+              <td>$330&ndash;$420</td>
             </tr>
             <tr>
               <th scope="row">Medium<br><span class="disclaimer">Bedroom, dining room</span></th>
-              <td>$555&ndash;$705</td>
-              <td>$635&ndash;$805</td>
-              <td>$780&ndash;$990</td>
+              <td>$395&ndash;$505</td>
+              <td>$455&ndash;$575</td>
             </tr>
             <tr>
               <th scope="row">Large<br><span class="disclaimer">Living room, primary bedroom</span></th>
-              <td>$710&ndash;$900</td>
-              <td>$805&ndash;$1,025</td>
-              <td>$990&ndash;$1,260</td>
+              <td>$505&ndash;$645</td>
+              <td>$570&ndash;$730</td>
             </tr>
           </tbody>
         </table>
@@ -516,7 +500,7 @@
         <h3>Things that bring it down</h3>
         <ul>
           <li><strong>Doing several rooms in one visit.</strong> Setup gets paid for once instead of three times.</li>
-          <li><strong>Walls only.</strong> Skipping trim and ceilings is the single biggest lever.</li>
+          <li><strong>Walls only.</strong> Skipping trim is the single biggest lever.</li>
           <li><strong>Staying in the same color family.</strong> Less coverage work.</li>
           <li><strong>An empty or nearly empty room.</strong> A house you haven't moved into yet is the cheapest house to paint.</li>
           <li><strong>Booking in the slow season.</strong> January through March is quiet in the Twin Cities.</li>
@@ -544,7 +528,7 @@
 </details>
 <details class="faq-item">
   <summary>What makes a quote go up?</summary>
-  <div class="faq-body"><p>Tall or vaulted ceilings, lots of trim and doors, dark-to-light color changes, heavy patching, stained trim that needs bonding primer, and rooms that are hard to set up in. What brings it down: doing several rooms at once, walls only, and keeping a similar color.</p></div>
+  <div class="faq-body"><p>Tall or vaulted ceilings, lots of trim work, dark-to-light color changes, heavy patching, stained trim that needs bonding primer, and rooms that are hard to set up in. What brings it down: doing several rooms at once, walls only, and keeping a similar color.</p></div>
 </details>
 </div>
       </div>
@@ -583,17 +567,15 @@
 (function () {
   var WALL_SQFT     = { small: 260, medium: 360, large: 460 }; // sq ft of wall per room size
   var HEIGHT_MULT   = { standard: 1, tall: 1.15 };             // tall/vaulted ceilings cost more
-  var RATE_PER_SQFT = 1.75;                                    // your labor rate per sq ft of wall
-  var TRIM_FEE      = { small: 70,  medium: 90,  large: 110 }; // trim, baseboards and doors
-  var CEILING_FEE   = { small: 120, medium: 165, large: 210 }; // painting the ceiling too
-  var DRYWALL_FEE   = 65;                                      // small patching
+  var RATE_PER_SQFT = 1.25;                                    // your labor rate per sq ft of wall
+  var TRIM_FEE      = { small: 50,  medium: 65,  large: 75 };  // trim and baseboards
+  var DRYWALL_FEE   = 45;                                      // small patching
   var RANGE         = 0.12;                                    // +/- spread shown as a range
 
   var state = { size: 'small', height: 'standard' };
   var priceEl = document.getElementById('calcPrice');
   var noteEl  = document.getElementById('calcBreakdown');
   var trimEl    = document.getElementById('calcTrim');
-  var ceilingEl = document.getElementById('calcCeiling');
   var drywallEl = document.getElementById('calcDrywall');
   if (!priceEl) { return; }
 
@@ -605,9 +587,8 @@
   function update() {
     var base = WALL_SQFT[state.size] * RATE_PER_SQFT * HEIGHT_MULT[state.height];
     var parts = ['Walls'];
-    if (trimEl.checked)    { base += TRIM_FEE[state.size];    parts.push('trim & doors'); }
-    if (ceilingEl.checked) { base += CEILING_FEE[state.size]; parts.push('ceiling'); }
-    if (drywallEl.checked) { base += DRYWALL_FEE;             parts.push('patching'); }
+    if (trimEl.checked)    { base += TRIM_FEE[state.size]; parts.push('trim'); }
+    if (drywallEl.checked) { base += DRYWALL_FEE;          parts.push('patching'); }
 
     var low  = base * (1 - RANGE);
     var high = base * (1 + RANGE);
@@ -632,7 +613,7 @@
     });
   });
 
-  [trimEl, ceilingEl, drywallEl].forEach(function (el) {
+  [trimEl, drywallEl].forEach(function (el) {
     el.addEventListener('change', update);
   });
 
@@ -665,8 +646,7 @@
         <h2 class="footer-h">Services</h2>
         <ul>
           <li><a href="/interior-house-painting">Interior House Painting</a></li>
-          <li><a href="/ceiling-painting">Ceiling Painting</a></li>
-          <li><a href="/trim-and-door-painting">Trim &amp; Door Painting</a></li>
+          <li><a href="/trim-and-baseboard-painting">Trim &amp; Baseboard Painting</a></li>
           <li><a href="/drywall-patching-and-repair">Drywall Patching</a></li>
           <li><a href="/services">All Services</a></li>
         </ul>

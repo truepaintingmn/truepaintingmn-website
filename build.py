@@ -67,7 +67,7 @@ def business_node():
         "paymentAccepted": "Cash, Check, Venmo, Zelle",
         "description": (
             "True Painting MN is an owner-operated interior painting business in "
-            "Plymouth, Minnesota. Interior rooms, ceilings, trim and doors, plus the "
+            "Plymouth, Minnesota. Interior rooms and trim, plus the "
             "small drywall patching that comes with a repaint. Free estimates."
         ),
         "founder": {
@@ -117,8 +117,7 @@ def business_node():
                 }
                 for n, u in [
                     ("Interior House Painting", "/interior-house-painting"),
-                    ("Ceiling Painting", "/ceiling-painting"),
-                    ("Trim and Door Painting", "/trim-and-door-painting"),
+                    ("Trim and Baseboard Painting", "/trim-and-baseboard-painting"),
                     ("Drywall Patching and Repair", "/drywall-patching-and-repair"),
                 ]
             ],
