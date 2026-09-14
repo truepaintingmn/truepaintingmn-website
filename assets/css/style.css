@@ -840,8 +840,18 @@ img, svg { max-width: 100%; display: block; }
 /* Responsive */
 @media (max-width: 860px) {
   .hero .container { grid-template-columns: 1fr; }
+  /* Photo first on mobile too, same as desktop's "see it right away" —
+     order flips the visual position without changing reading order. */
+  .hero .photo-hero-photo { order: -1; margin-bottom: 8px; }
+  .hero .hero-text { order: 1; }
   .contact-wrap { grid-template-columns: 1fr; }
   .calculator { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  .hero { padding: 44px 0 60px; }
+  .hero .photo-hero-photo { width: 168px; }
+  .hero .photo-hero-photo .owner-photo { width: 168px; height: 168px; }
 }
 
 @media (max-width: 520px) {
