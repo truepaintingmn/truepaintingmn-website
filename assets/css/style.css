@@ -900,7 +900,7 @@ summary:focus-visible {
     border-bottom: 1px solid var(--color-border);
   }
   .nav-links li:last-child a { border-bottom: none; }
-  .nav-toggle { display: flex; }
+  .nav-toggle { display: flex; flex-direction: column; align-items: center; justify-content: center; }
   .nav-phone-desktop { display: none; }
   .nav-phone-mobile { display: block; }
   .nav-phone-mobile a { color: var(--color-accent-dark); font-weight: 700; }
@@ -1358,27 +1358,11 @@ table.rate-table tr:last-child td { border-bottom: none; }
   .site-header nav { flex: 0 0 auto; }
 
   .nav-cta { gap: 4px; flex: 0 0 auto; }
-  .nav-call { width: 38px; height: 38px; }
   .nav-cta .btn { display: none; }
-
-  .nav-call {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 42px;
-    height: 42px;
-    border-radius: 10px;
-    background: var(--color-accent);
-    color: #fff;
-    text-decoration: none;
-  }
   .nav-toggle { padding: 8px 0 8px 8px; }
 }
 
 /* Very narrow phones: drop the wordmark, keep the icon. */
 @media (max-width: 370px) {
   .logo-text { display: none; }
-}
-@media (min-width: 621px) {
-  .nav-call { display: none; }
 }
