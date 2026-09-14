@@ -689,6 +689,52 @@ img, svg { max-width: 100%; display: block; }
   .about-teaser-photo .owner-photo { width: 200px; height: 200px; }
 }
 
+/* Page hero with a photo built in (About page) — photo is the first
+   thing on the page, next to a short intro, instead of a text-only
+   banner with the photo further down. Breadcrumbs sit above this row,
+   full width; the row itself is photo first, text second, so the
+   photo is also what shows first when it stacks on mobile. */
+.photo-hero-row {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+.photo-hero-text { flex: 1 1 auto; min-width: 0; }
+.photo-hero-photo {
+  flex: 0 0 auto;
+  width: 220px;
+  text-align: center;
+}
+.photo-hero-photo .owner-photo {
+  width: 220px;
+  height: 220px;
+  margin: 0 auto;
+  border-color: rgba(255,255,255,0.25);
+}
+.photo-hero-caption {
+  display: block;
+  margin-top: 14px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.4;
+}
+.photo-hero-caption span {
+  display: block;
+  font-weight: 500;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.7);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+@media (max-width: 700px) {
+  .photo-hero-row { flex-direction: column; text-align: center; gap: 20px; }
+  .photo-hero-photo { width: 168px; }
+  .photo-hero-photo .owner-photo { width: 168px; height: 168px; }
+  .photo-hero .page-hero-actions { justify-content: center; }
+  .photo-hero .breadcrumbs ol { justify-content: center; }
+}
+
 /* Founder note (About section) */
 .founder-note {
   border-left: 3px solid var(--color-accent);
