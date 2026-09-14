@@ -322,7 +322,7 @@ img, svg { max-width: 100%; display: block; }
 .hero .container {
   position: relative;
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: 1fr 1fr;
   gap: 48px;
   align-items: center;
 }
@@ -650,44 +650,6 @@ img, svg { max-width: 100%; display: block; }
   .owner-photo { width: 168px; height: 168px; }
 }
 
-/* Homepage "meet the owner" teaser — photo + intro + the guarantee, together */
-.about-teaser {
-  display: flex;
-  align-items: flex-start;
-  gap: 44px;
-}
-.about-teaser-photo {
-  flex: 0 0 auto;
-  width: 240px;
-  text-align: center;
-}
-.about-teaser-photo .owner-photo {
-  width: 240px;
-  height: 240px;
-  margin: 0 auto;
-}
-.about-teaser-caption {
-  display: block;
-  margin-top: 14px;
-  font-family: var(--font-heading);
-  font-weight: 700;
-  color: var(--color-primary-dark);
-  line-height: 1.4;
-}
-.about-teaser-caption span {
-  display: block;
-  font-weight: 500;
-  font-size: 0.85rem;
-  color: var(--color-text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-}
-.about-teaser-text { flex: 1 1 auto; min-width: 0; }
-@media (max-width: 760px) {
-  .about-teaser { flex-direction: column; align-items: center; text-align: center; gap: 26px; }
-  .about-teaser-photo { width: 200px; }
-  .about-teaser-photo .owner-photo { width: 200px; height: 200px; }
-}
 
 /* Page hero with a photo built in (About page) — photo is the first
    thing on the page, next to a short intro, instead of a text-only
@@ -703,6 +665,7 @@ img, svg { max-width: 100%; display: block; }
 .photo-hero-photo {
   flex: 0 0 auto;
   width: 220px;
+  margin: 0 auto;
   text-align: center;
 }
 .photo-hero-photo .owner-photo {
