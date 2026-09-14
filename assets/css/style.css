@@ -324,7 +324,15 @@ img, svg { max-width: 100%; display: block; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 48px;
-  align-items: center;
+  align-items: start;
+}
+
+/* Right-hand hero column: photo + tagline, then the estimate card,
+   stacked in one column so they move together as a unit. */
+.hero-photo-col {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 }
 
 .hero h1 {
@@ -690,6 +698,12 @@ img, svg { max-width: 100%; display: block; }
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
+.photo-hero-tagline {
+  margin: 6px 0 0;
+  color: rgba(255,255,255,0.82);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
 @media (max-width: 700px) {
   .photo-hero-row { flex-direction: column; text-align: center; gap: 20px; }
   .photo-hero-photo { width: 168px; }
@@ -842,7 +856,7 @@ img, svg { max-width: 100%; display: block; }
   .hero .container { grid-template-columns: 1fr; }
   /* Photo first on mobile too, same as desktop's "see it right away" —
      order flips the visual position without changing reading order. */
-  .hero .photo-hero-photo { order: -1; margin-bottom: 8px; }
+  .hero .hero-photo-col { order: -1; }
   .hero .hero-text { order: 1; }
   .contact-wrap { grid-template-columns: 1fr; }
   .calculator { grid-template-columns: 1fr; }
