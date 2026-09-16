@@ -354,6 +354,14 @@ img, svg { max-width: 100%; display: block; }
   margin-top: 32px;
 }
 
+.hero-guarantee {
+  margin: 18px 0 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.02rem;
+  color: #F2C29A;
+}
+
 .hero-badges {
   display: flex;
   flex-wrap: wrap;
